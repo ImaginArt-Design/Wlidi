@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wlidi (وليدي) — المساعد الذكي لمسك نقط مسار بالصوت للمغرب</title>
+  <meta name="description" content="تطبيق وليدي Wlidi — أسرع وأذكى طريقة للأساتذة المغاربة لمسك نقط منظومة مسار بالصوت مباشرة في ملف إكسيل. برنامج محمول خفيف (550 Ko) ومجاني 100%.">
+  <meta name="keywords" content="وليدي, مسار, نقط مسار, إكسيل مسار, Massar, Saisie notes Massar, Wlidi, Darija, المغرب, أساتذة المغرب">
+  <meta name="author" content="Imagin'Art — Laabidi Abdelghani">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wlidi (وليدي) — مسك نقط مسار بالصوت في دقيقتين">
+  <meta property="og:description" content="برنامج محمول مجاني وخفيف (550 Ko) يساعد الأساتذة الكرام على إدخال نقط منظومة مسار بالصوت والدارجة المغربية مباشرة في ملفات الإكسيل.">
+  <meta property="og:image" content="assets/Wlidi_header_logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-wrapper">
+        <img src="assets/Wlidi_header_logo.png" alt="Wlidi Logo" class="brand-logo">
+        <span class="brand-badge">v1.0 Portable</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link" data-i18n="navFeatures">المميزات</a></li>
+        <li><a href="#steps" class="nav-link" data-i18n="navSteps">كيف يعمل</a></li>
+        <li><a href="#massar" class="nav-link" data-i18n="navMassar">التوافق مع مسار</a></li>
+        <li><a href="#faq" class="nav-link" data-i18n="faqBadge">الأسئلة الشائعة</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="btnLangToggle" class="btn-lang" type="button" aria-label="Changer de langue">
+          🌐 <span>Français</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-pill">
+          <span data-i18n="heroPill">🕊️ صدقة جارية لروح والدي العزيز رحمه الله — تطبيق مجاني 100% للأساتذة الكرام</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span data-i18n="heroTitlePrefix">أسرع وأذكى طريقة</span> <span class="highlight" data-i18n="heroTitleHighlight">لمسك نقط مسار بالصوت 🎙️</span>
+        </h1>
+
+        <p class="hero-desc" data-i18n="heroDesc">
+          قل وداعاً لإدخال النقط اليدوي المرهق رقماً برقم. افتح ملف إكسيل مسار، وانطق أسماء التلاميذ ونقطهم بالدارجة أو العربية الفصحى، ليقوم "وليدي" بمطابقة الأسماء وتسجيل النقط فورياً بدقة 100%.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="Wlidi.exe" download="Wlidi.exe" class="btn-hero-primary">
+            <span class="icon">⚡</span>
+            <span data-i18n="btnDownloadHero">تحميل برنامج وليدي مجاناً (Wlidi.exe)</span>
+          </a>
+        </div>
+
+        <div class="hero-meta-badges">
+          <div class="hero-badge-item">
+            <span class="icon">🔒</span>
+            <span data-i18n="badgeOffline">يعمل 100% بدون إنترنت</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="icon">📦</span>
+            <span data-i18n="badgePortable">برنامج محمول خفيف (550 Ko)</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="icon">📊</span>
+            <span data-i18n="badgeMassar">متوافق 100% مع إكسيل مسار</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="icon">🎁</span>
+            <span data-i18n="badgeFree">مجاني بالكامل مدى الحياة</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Massar Strip -->
+    <div class="container" id="massar">
+      <div class="massar-strip">
+        <div class="massar-info">
+          <div class="massar-icon-box">🏛️</div>
+          <div class="massar-text">
+            <h4 data-i18n="massarTitle">تكامل رسمي ومطابقة بنسبة 100% مع منظومة مسار</h4>
+            <p data-i18n="massarSub">وزارة التربية الوطنية والتعليم الأولي والرياضة — المملكة المغربية</p>
+          </div>
+        </div>
+        <div class="massar-tags">
+          <span class="massar-tag" data-i18n="massarTag1">صيغة Export_...xlsx الأصلية</span>
+          <span class="massar-tag" data-i18n="massarTag2">حفظ المعرفات وورقة Data</span>
+          <span class="massar-tag" data-i18n="massarTag3">معالجة الغياب (غائب = 0)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- How It Works (3 Steps) -->
+    <section class="steps-section" id="steps">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge" data-i18n="stepsBadge">بساطة وسرعة فائقة</span>
+          <h2 class="section-title" data-i18n="stepsTitle">كيف يعمل في 3 خطوات بسيطة ؟</h2>
+          <p class="section-subtitle" data-i18n="stepsSub">بدون أي تعقيد، مجهز خصيصاً ليتماشى مع الروتين اليومي للأستاذ المغربي.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 data-i18n="step1Title">1. حمّل ملف إكسيل من مسار</h3>
+            <p data-i18n="step1Desc">قم بتصدير لائحة النقط (Export_...xlsx) من حسابك في منظومة مسار كالمعتاد بدون أي تغيير.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 data-i18n="step2Title">2. انطق الأسماء والنقط بصوتك</h3>
+            <p data-i18n="step2Desc">افتح وليدي واضغط على المايكروفون. انطق مثلاً: "العلمي يوسف 16" أو "حسام 15.5" بكل راحة.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 data-i18n="step3Title">3. احفظ وارفعه لمسار بنقرة واحدة</h3>
+            <p data-i18n="step3Desc">اضغط (Ctrl+S) لحفظ النقط مباشرة في نفس الملف، ثم ارفعه مباشرة إلى موقع مسار بنجاح تام.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge" data-i18n="featBadge">مزايا صُممت للأستاذ</span>
+          <h2 class="section-title" data-i18n="featTitle">لماذا يفضل الأساتذة برنامج وليدي ؟</h2>
+          <p class="section-subtitle" data-i18n="featSub">صُمم البرنامج بحرفية عالية ليوفر ساعات طويلة من الإرهاق والتدقيق اليدوي.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🎙️</div>
+            <h3 data-i18n="feat1Title">إملاء صوتي مغربي ذكي</h3>
+            <p data-i18n="feat1Desc">يتعرف بسلاسة على النطق المغربي الدارج والفصيح، ويفهم الأرقام والكسور (نصف، ربع، لاروب).</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📊</div>
+            <h3 data-i18n="feat2Title">تطابق جراحي مع إكسيل مسار</h3>
+            <p data-i18n="feat2Desc">يقرأ ويكتب في ورقة NotesCC دون المساس بورقة Data الخفية أو الرموز البرمجية للوزارة.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">💾</div>
+            <h3 data-i18n="feat3Title">حفظ فوري في الملف الأصلي</h3>
+            <p data-i18n="feat3Desc">احفظ كل تعديلاتك مباشرة في نفس الملف المفتوح بضغطة زر أو باختصار (Ctrl+S) دون تكرار التحميل.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">⚖️</div>
+            <h3 data-i18n="feat4Title">معالجة الغياب الذكية (غائب = 0)</h3>
+            <p data-i18n="feat4Desc">يسجل نقطة صفر تلقائياً للتلاميذ الغائبين لتفادي أي أخطاء أو رفض في حساب المعدلات العامة.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📝</div>
+            <h3 data-i18n="feat5Title">بنك التقديرات الجاهزة</h3>
+            <p data-i18n="feat5Desc">قائمة منسدلة فورية تضم أشهر الملاحظات التربوية المعتمدة (حسن جداً، مجتهد، يحتاج لمزيد من الجهد...).</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🛡️</div>
+            <h3 data-i18n="feat6Title">أمان تام وخصوصية 100%</h3>
+            <p data-i18n="feat6Desc">يعمل محلياً على جهازك دون اتصال بالسيرفرات ودون تسريب لأي معطيات شخصية أو نقط للتلاميذ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA Box -->
+    <section class="download-section" id="download">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title" data-i18n="ctaTitle">ابدأ مسك النقط بذكاء وراحة الآن</h2>
+          <p class="cta-desc" data-i18n="ctaDesc">حمّل البرنامج في ثانية واحدة، بدون تثبيت ولا إعدادات معقدة. افتحه واستمتع بتجربة إدخال سريعة وممتعة.</p>
+          <a href="Wlidi.exe" download="Wlidi.exe" class="btn-cta-download">
+            <span class="icon">🚀</span>
+            <span data-i18n="btnDownloadCta">تحميل وليدي مجاناً (Wlidi.exe)</span>
+          </a>
+          <div class="cta-meta-info">
+            <span>📦 <span data-i18n="ctaMeta1">إصدار 1.0 محمول</span></span>
+            <span>⚖️ <span data-i18n="ctaMeta2">الحجم : 550 Ko فقط</span></span>
+            <span>💻 <span data-i18n="ctaMeta3">متوافق مع Windows 10 و Windows 11</span></span>
+            <span>🛡️ <span data-i18n="ctaMeta4">خالٍ تماماً من الإعلانات</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge" data-i18n="faqBadge">الأسئلة الشائعة</span>
+          <h2 class="section-title" data-i18n="faqTitle">إجابات على أكثر ما يسأل عنه الأساتذة</h2>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span data-i18n="faqQ1">هل يحتاج البرنامج إلى تثبيت أو اتصال بالإنترنت؟</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p data-i18n="faqA1">لا إطلاقاً ! البرنامج محمول (Portable) بصيغة .exe بحجم 550 Ko فقط. ضعه في أي مكان، على سطح المكتب أو فلاش ديسك، وافتحه بنقرة واحدة بدون تثبيت وبدون إنترنت.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span data-i18n="faqQ2">هل يمكن أن يفسد البرنامج ملف إكسيل الخاص بمسار؟</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p data-i18n="faqA2">مستحيل تماماً بفضل الله. البرنامج مصمم وفق معايير جراحية صارمة تحافظ على بنية الملف الأصلية، وتعدل فقط ورقة النقط دون المساس بورقة Data الخفية أو الرموز التعريفية UUID.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span data-i18n="faqQ3">هل سيبقى البرنامج مجانياً دائماً؟</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p data-i18n="faqA3">نعم، البرنامج مجاني 100% بدون أي رسوم، تم تطويره كصدقة جارية لروح والدي العزيز رحمه الله، ونسأل كل من استفاد منه دعوة صالحة له بالرحمة والمغفرة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-strip">
+        <span data-i18n="footerTribute">🕊️ صدقة جارية لروح والدي العزيز رحمه الله — نسألكم الدعاء له بالرحمة والمغفرة والجنة.</span>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/Wlidi_header_logo.png" alt="Wlidi Logo">
+          <p>مساعد الأساتذة الذكي لمسك نقط منظومة مسار المغربية</p>
+        </div>
+
+        <div class="footer-links-group">
+          <a href="https://linktr.ee/imagin.art" target="_blank" rel="noopener noreferrer" class="footer-link-item">
+            <span>🔗</span> Linktree
+          </a>
+          <a href="mailto:laabidi.cloud@gmail.com" class="footer-link-item">
+            <span>✉️</span> laabidi.cloud@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        <div>
+          <strong data-i18n="footerDevName">Imagin'Art — عبد الغني لعبيدي</strong>
+        </div>
+        <div>
+          <span data-i18n="footerRights">© 2026 Wlidi (وليدي) — جميع الحقوق محفوظة</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
