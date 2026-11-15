@@ -276,6 +276,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 4. Menu Burger Mobile (Sandwich)
+  const btnBurger = document.getElementById('btnBurger');
+  const navLinks = document.getElementById('navLinks');
+
+  if (btnBurger && navLinks) {
+    btnBurger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navLinks.classList.toggle('is-open');
+      btnBurger.classList.toggle('is-open', isOpen);
+      btnBurger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Fermer le menu au clic sur un lien du menu
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        btnBurger.classList.remove('is-open');
+        btnBurger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Fermer le menu si on clique n'importe où en dehors
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !btnBurger.contains(e.target)) {
+        navLinks.classList.remove('is-open');
+        btnBurger.classList.remove('is-open');
+        btnBurger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   // Appliquer la langue par défaut (Arabe)
   applyLanguage('ar');
 });
