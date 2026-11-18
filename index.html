@@ -218,24 +218,47 @@
             <p class="smartscreen-desc" data-i18n="smartscreenDesc">نظراً لأن برنامج "وليدي" جديد وخفيف وبدون تثبيت، قد يعرض نظام ويندوز تنبيهاً أمنياً روتينياً (SmartScreen). هذا أمر طبيعي وآمن 100%، يمكنك تشغيله في خطوتين :</p>
           </div>
 
-          <div class="smartscreen-steps-grid">
-            <div class="smartscreen-step">
-              <div class="step-badge-num">1</div>
-              <div class="step-text-wrap">
-                <h4 class="step-title" data-i18n="smartscreenStep1Title">الخطوة الأولى :</h4>
-                <p class="step-instruction" data-i18n="smartscreenStep1Desc">اضغط على <strong class="link-highlight">« مزيد من المعلومات »</strong> (Informations complémentaires / More info)</p>
+          <div class="smartscreen-main-layout">
+            <!-- Left/Image side -->
+            <div class="smartscreen-visual-col">
+              <div class="smartscreen-img-wrapper">
+                <div class="smartscreen-img-tag">
+                  <span>📸</span>
+                  <span data-i18n="smartscreenImgTag">شكل رسالة ويندوز عند فتح البرنامج لأول مرة</span>
+                </div>
+                <img src="assets/smartscreen_alert.png" alt="Windows SmartScreen Alert" class="smartscreen-img" />
+                <div class="smartscreen-img-callout">
+                  <span class="callout-hand">👆</span>
+                  <span data-i18n="smartscreenImgPill">اضغط على الزر الأبيض « تشغيل على أي حال » (Run anyway)</span>
+                </div>
               </div>
             </div>
 
-            <div class="smartscreen-divider">
-              <span class="step-arrow">←</span>
-            </div>
+            <!-- Steps side -->
+            <div class="smartscreen-steps-col">
+              <div class="smartscreen-step">
+                <div class="step-badge-num">1</div>
+                <div class="step-text-wrap">
+                  <h4 class="step-title" data-i18n="smartscreenStep1Title">الخطوة الأولى :</h4>
+                  <p class="step-instruction" data-i18n="smartscreenStep1Desc">اضغط على <strong class="link-highlight">« مزيد من المعلومات »</strong> (Informations complémentaires / More info)</p>
+                </div>
+              </div>
 
-            <div class="smartscreen-step">
-              <div class="step-badge-num">2</div>
-              <div class="step-text-wrap">
-                <h4 class="step-title" data-i18n="smartscreenStep2Title">الخطوة الثانية :</h4>
-                <p class="step-instruction" data-i18n="smartscreenStep2Desc">اضغط على الزر الأبيض <strong class="btn-highlight">« تشغيل على أي حال »</strong> (Exécuter quand même / Run anyway)</p>
+              <div class="smartscreen-step-connector">
+                <span class="connector-arrow">↓</span>
+              </div>
+
+              <div class="smartscreen-step highlight-step">
+                <div class="step-badge-num pulse">2</div>
+                <div class="step-text-wrap">
+                  <h4 class="step-title" data-i18n="smartscreenStep2Title">الخطوة الثانية :</h4>
+                  <p class="step-instruction" data-i18n="smartscreenStep2Desc">اضغط على الزر الأبيض <strong class="btn-highlight">« تشغيل على أي حال »</strong> (Exécuter quand même / Run anyway)</p>
+                </div>
+              </div>
+
+              <div class="smartscreen-quick-alt">
+                <span class="alt-icon">💡</span>
+                <span data-i18n="smartscreenG3">بديل سريع : ستجد داخل الملف المضغوط أيضاً « Lancer_Wlidi.bat » لفتحه فوراً بنقرة واحدة</span>
               </div>
             </div>
           </div>
@@ -248,10 +271,6 @@
             <div class="guarantee-pill">
               <span class="pill-icon">⚡</span>
               <span data-i18n="smartscreenG2">يعمل محلياً بدون إنترنت ولا يطلب صلاحيات المدير (Admin)</span>
-            </div>
-            <div class="guarantee-pill">
-              <span class="pill-icon">💡</span>
-              <span data-i18n="smartscreenG3">بديل سريع : ستجد داخل الملف المضغوط أيضاً « Lancer_Wlidi.bat » لفتحه فوراً بنقرة واحدة</span>
             </div>
           </div>
         </div>
