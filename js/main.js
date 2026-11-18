@@ -105,7 +105,6 @@ const DICT = {
     smartscreenStep2Desc: "اضغط على الزر الأبيض <strong class=\"btn-highlight\">« تشغيل على أي حال »</strong> (Exécuter quand même / Run anyway)",
     smartscreenG1: "برنامج سليم 100% ومفحوص تماماً ضد الفيروسات",
     smartscreenG2: "يعمل محلياً بدون إنترنت ولا يطلب صلاحيات المدير (Admin)",
-    smartscreenG3: "بديل سريع : ستجد داخل الملف المضغوط أيضاً « Lancer_Wlidi.bat » لفتحه فوراً بنقرة واحدة",
     smartscreenImgTag: "شكل رسالة ويندوز عند فتح البرنامج لأول مرة",
     smartscreenImgPill: "اضغط على الزر الأبيض المشار إليه « تشغيل على أي حال » (Run anyway)",
 
@@ -227,7 +226,6 @@ const DICT = {
     smartscreenStep2Desc: "Cliquez sur le bouton blanc <strong class=\"btn-highlight\">« Exécuter quand même »</strong> (Run anyway)",
     smartscreenG1: "Application 100% saine, vérifiée et sans aucun virus",
     smartscreenG2: "Fonctionne hors-ligne et ne requiert aucun droit administrateur",
-    smartscreenG3: "Alternative rapide : retrouvez également dans le ZIP « Lancer_Wlidi.bat » pour un lancement direct en un clic",
     smartscreenImgTag: "Capture d'écran de l'alerte Windows au 1er lancement",
     smartscreenImgPill: "Cliquez sur le bouton blanc « Exécuter quand même » (Run anyway)",
 
