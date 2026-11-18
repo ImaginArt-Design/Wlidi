@@ -95,6 +95,18 @@ const DICT = {
     ctaMeta3: "متوافق مع Windows 10 و Windows 11",
     ctaMeta4: "خالٍ تماماً من الإعلانات",
 
+    // SmartScreen Reassurance Guide
+    smartscreenBadge: "🛡️ خطوة سريعة وبسيطة عند التشغيل لأول مرة (في ثانيتين)",
+    smartscreenTitle: "هل ظهرت لك شاشة الحماية الزرقاء من ويندوز ؟",
+    smartscreenDesc: "نظراً لأن برنامج \"وليدي\" جديد وخفيف وبدون تثبيت، قد يعرض نظام ويندوز تنبيهاً أمنياً روتينياً (SmartScreen). هذا أمر طبيعي وآمن 100%، يمكنك تشغيله في خطوتين :",
+    smartscreenStep1Title: "الخطوة الأولى :",
+    smartscreenStep1Desc: "اضغط على <strong class=\"link-highlight\">« مزيد من المعلومات »</strong> (Informations complémentaires / More info)",
+    smartscreenStep2Title: "الخطوة الثانية :",
+    smartscreenStep2Desc: "اضغط على الزر الأبيض <strong class=\"btn-highlight\">« تشغيل على أي حال »</strong> (Exécuter quand même / Run anyway)",
+    smartscreenG1: "برنامج سليم 100% ومفحوص تماماً ضد الفيروسات",
+    smartscreenG2: "يعمل محلياً بدون إنترنت ولا يطلب صلاحيات المدير (Admin)",
+    smartscreenG3: "بديل سريع : ستجد داخل الملف المضغوط أيضاً « Lancer_Wlidi.bat » لفتحه فوراً بنقرة واحدة",
+
     // FAQ
     faqBadge: "الأسئلة الشائعة",
     faqTitle: "إجابات على أكثر ما يسأل عنه الأساتذة",
@@ -203,6 +215,18 @@ const DICT = {
     ctaMeta3: "Compatible Windows 10 & Windows 11",
     ctaMeta4: "Garanti sans publicité",
 
+    // SmartScreen Reassurance Guide
+    smartscreenBadge: "🛡️ Étape simple lors de la première ouverture (en 2 secondes)",
+    smartscreenTitle: "L'écran bleu de protection Windows apparaît ?",
+    smartscreenDesc: "Comme Wlidi est un outil récent et portable sans installation, Windows peut afficher un écran de sécurité standard (SmartScreen). C'est normal et 100% sûr, lancez-le en 2 clics :",
+    smartscreenStep1Title: "Étape 1 :",
+    smartscreenStep1Desc: "Cliquez sur <strong class=\"link-highlight\">« Informations complémentaires »</strong> (More info)",
+    smartscreenStep2Title: "Étape 2 :",
+    smartscreenStep2Desc: "Cliquez sur le bouton blanc <strong class=\"btn-highlight\">« Exécuter quand même »</strong> (Run anyway)",
+    smartscreenG1: "Application 100% saine, vérifiée et sans aucun virus",
+    smartscreenG2: "Fonctionne hors-ligne et ne requiert aucun droit administrateur",
+    smartscreenG3: "Alternative rapide : retrouvez également dans le ZIP « Lancer_Wlidi.bat » pour un lancement direct en un clic",
+
     // FAQ
     faqBadge: "Foire aux questions",
     faqTitle: "Questions fréquemment posées",
@@ -234,7 +258,7 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key]) {
-      el.textContent = t[key];
+      el.innerHTML = t[key];
     }
   });
 
